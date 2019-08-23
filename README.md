@@ -13,43 +13,47 @@ npm install --save react-textinput
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import TextInput from 'react-textinput';
 
-import TextInput from 'react-textinput'
+
+let namevalidations = [
+  {
+    rule: "-",
+    message: "the field should not be empty"
+  },
+  {
+    rule: "^.{6,}$",
+    message: "Length sould be more than 6"
+  }
+]
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      
-    }
+    this.state = { }
   }
 
-  updateInputValue = (id, e) => {
-    var state = { ...this.state };
-    state[id] = e;
+  updateInputValue = (id, value) => {
     this.setState({
-      ...state
+      [id]: value
     })
   }
 
   render() {
-    const label = 'brand',
-      message = "";
-    
     return (
       <div>
         <TextInput
           attr={{
-            "name": "brand",
+            "name": "name",
             "type": "text",
-            "value": this.state[label] || "",
+            "value": this.state["name"] || "",
             "autoComplete": "off",
             "required": true
           }}
           updateInputValue={this.updateInputValue}
-          label={label}
-          message={message}
+          label={"Name"}
+          message={namevalidations}
         />
       </div>
     )
