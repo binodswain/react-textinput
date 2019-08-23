@@ -57,6 +57,9 @@ export default class App extends Component {
 }
 
 ```
+## Screenshot
+
+![Screenshot](/example/screenshot.PNG?raw=true "Example Screenshot")
 
 ### TODO
 - [x] Add accesibility tags
