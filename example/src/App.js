@@ -4,7 +4,7 @@ import TextInput from 'react-textinput';
 
 const email = "^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
 
-let validations = [
+let emailvalidations = [
   {
     rule: "-",
     message: "the field should not be empty"
@@ -16,6 +16,17 @@ let validations = [
   {
     rule: email,
     message: "invalid email"
+  }
+]
+
+let namevalidations = [
+  {
+    rule: "-",
+    message: "the field should not be empty"
+  },
+  {
+    rule: "^.{6,}$",
+    message: "Length sould be more than 6"
   }
 ]
 
@@ -34,21 +45,32 @@ export default class App extends Component {
   }
 
   render() {
-    const label = 'brand';
-    
     return (
       <div>
         <TextInput
           attr={{
-            "name": "brand",
+            "name": "email",
             "type": "text",
-            "value": this.state[label] || "",
+            "value": this.state["email"] || "",
             "autoComplete": "off",
             "required": true
           }}
           updateInputValue={this.updateInputValue}
-          label={label}
-          message={validations}
+          label={"Email"}
+          message={emailvalidations}
+        />
+
+        <TextInput
+          attr={{
+            "name": "name",
+            "type": "text",
+            "value": this.state["name"] || "",
+            "autoComplete": "off",
+            "required": true
+          }}
+          updateInputValue={this.updateInputValue}
+          label={"Name"}
+          message={namevalidations}
         />
       </div>
     )
