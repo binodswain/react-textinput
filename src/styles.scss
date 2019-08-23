@@ -1,0 +1,47 @@
+/* add css styles here (optional) */
+
+.inputbox {
+    padding: 16px 16px 0 16px;
+    font-size: 17px;
+    line-height: 1.23;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 3.3em; 
+}
+
+.placeholder {
+    position: absolute;
+    top: 1.15em;
+    left: 1.15em;
+    color: #666;
+    line-height: 1.25;
+    pointer-events: none; 
+    transition:.2s ease-in all;
+
+    &.error {
+        color: red;
+    }
+}
+
+input:focus ~ .placeholder,
+input:valid ~ .placeholder,
+.placeholder.hold {
+    position: absolute;
+    top: 0.6em;
+    left: 1.5em;
+    font-size: 12px; 
+}
+
+.form-element {
+    box-sizing: border-box;
+    position: relative; 
+
+    .error-message {
+        color: red;
+        font-size: 13px;
+        margin-bottom: 12px; 
+    } 
+}
