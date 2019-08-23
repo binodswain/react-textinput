@@ -59,13 +59,13 @@ export default class App extends Component {
 ```
 
 ### TODO
-[x] Add accesibility tags
-[x] Support regex in validation message
-[x] Display error message on Blur
-[ ] Update example with grid and mow view
-[ ] Update documenation of the component
-[ ] Add textarea element
-[ ] Add Rule utils with predefined Regex and min/max length function
+- [x] Add accesibility tags
+- [x] Support regex in validation message
+- [x] Display error message on Blur
+- [ ] Update example with grid and mow view
+- [ ] Update documenation of the component
+- [ ] Add textarea element
+- [ ] Add Rule utils with predefined Regex and min/max length function
   - [ ] Email
   - [ ] IsAlphaNumeric
   - [ ] minLength()
