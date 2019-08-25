@@ -1,20 +1,20 @@
-# react-textinput
+# react-textinput-field
 
 > React package to render input field with floating label.
 
-[![NPM](https://img.shields.io/npm/v/react-textinput.svg)](https://www.npmjs.com/package/react-textinput) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-textinput-field.svg)](https://www.npmjs.com/package/react-textinput-field) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-textinput
+npm install --save react-textinput-field
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react';
-import TextInput from 'react-textinput';
+import TextInput from 'react-textinput-field';
 
 
 let namevalidations = [

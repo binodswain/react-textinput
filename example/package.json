@@ -1,6 +1,6 @@
 {
-  "name": "react-textinput-example",
-  "homepage": "https://binodswain.github.io/react-textinput",
+  "name": "react-textinput-field-example",
+  "homepage": "https://binodswain.github.io/react-textinput-field",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "react-textinput": "file:.."
+    "react-textinput-field": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",

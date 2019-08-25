@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TextInput from 'react-textinput';
+import TextInput from 'react-textinput-field';
 
 const email = "^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
 
@@ -10,8 +10,8 @@ let emailvalidations = [
     message: "the field should not be empty"
   },
   {
-    rule: "^.{6,}$",
-    message: "Length sould be more than 6"
+    rule: "^.{5,}$",
+    message: "Length sould be more than 5"
   },
   {
     rule: email,

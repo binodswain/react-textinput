@@ -1,5 +1,5 @@
 {
-  "name": "react-textinput",
+  "name": "react-textinput-field",
   "version": "1.0.0",
   "main": "build/index.js",
   "description": "React package to render input field with floating label.",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binodswain/react-textinput.git"
+    "url": "git+https://github.com/binodswain/react-textinput-field.git"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
