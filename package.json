@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "build/index.js",
   "description": "React package to render input field with floating label.",
-  "repository": "binodswain/react-textinput",
   "scripts": {
     "start": "webpack --mode production --watch",
     "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binodswain/react-textinput.git"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",

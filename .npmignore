@@ -2,3 +2,6 @@ src
 example
 .babelrc
 webpack.config.js
+.gitignore
+README.md
+node_modules/
